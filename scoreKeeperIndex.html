@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+
+    <!-- Google Fonts     -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="scoreKeeperApp.css">
+
+</head>
+
+<body>
+    <section class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-8 text-center px-0 mb-1 border border-1 rounded shadow-sm">
+                <img id="mainImage"
+                    src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1375&q=80">
+                <h5 class="text-left ml-3 mt-2">Ping Pong Score Keeper</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 text-left border border-1 rounded shadow-sm">
+                <p id="scoreBoard"><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></p>
+                <p class="mb-2">Use the buttons below to keep score</p>
+                <h4 id="playingTo">Playing To</h4>
+                <select id="dropdownScore" class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
+                    <!-- <option selected>5</option> -->
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class=" row justify-content-center">
+            <div class="col-8 px-0 d-flex justify-content-between">
+                <button id="playerOneButton" type="button" class="btn flex-fill">+1 Player One</button>
+                <button id="playerTwoButton" type="button" class="btn flex-fill">+1 Player Two</button>
+                <button id="resetButton" type="button" class="btn flex-fill">Reset</button>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    </script>
+
+    <script src=scoreKeeperScript.js></script>
+</body>
+
+</html>
