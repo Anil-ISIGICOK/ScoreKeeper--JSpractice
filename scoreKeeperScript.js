@@ -37,22 +37,6 @@ playerTwoButton.addEventListener("click", function () {
     }
 })
 
-
-
-
-// playerTwoButton.addEventListener("click", function () {
-//     let selectedValue = document.querySelector("#dropdownScore").value;
-//     if (playerTwoScore.innerText === selectedValue) {
-//         playerOneButton.disabled = true;
-//         playerTwoButton.disabled = true;
-//         playerTwoScore.style.color = "#06d6a0";
-//         playerOneScore.style.color = "#ef476f";
-//     }
-//     else {
-//         playerTwoScore.innerText = (parseInt(playerTwoScore.innerText) + 1).toString();
-//     }
-// })
-
 resetButton.addEventListener("click", function () {
     playerOneScore.innerText = "0";
     playerTwoScore.innerText = "0";
